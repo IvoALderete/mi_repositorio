@@ -1,132 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AlienPC</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"/>
-    <link rel="stylesheet" href="../estiloscss/style.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AlienPC</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-3/Qf7ePevld5Gz9+LDDwTZz5IlE0lTqFbLn+TkRqxy2dSs4QV7BprgZAG7U0c1T6" crossorigin="anonymous" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../estiloscss/style.css" />
+  <!--Links de Fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-navbar">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">AlienPC</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="productosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
-                <ul class="dropdown-menu" aria-labelledby="productosDropdown">
-                    <li><a class="dropdown-item" href="amd.html">AMD</a></li>
-                    <li><a class="dropdown-item" href="intel.html">INTEL</a></li>
-                    <li><a class="dropdown-item" href="adata.html">ADATA</a></li>
-                    <li><a class="dropdown-item" href="nvidia.html">NVIDIA</a></li>
-                    <!-- Puedes agregar más elementos de menú desplegable aquí -->
+            <a class="navbar-brand" href="../index.html">AlienPC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                        <ul class="dropdown-menu" aria-labelledby="productosDropdown">
+                            <li><a class="dropdown-item" href="amd.html">AMD</a></li>
+                            <li><a class="dropdown-item" href="intel.html">INTEL</a></li>
+                            <li><a class="dropdown-item" href="adata.html">ADATA</a></li>
+                            <li><a class="dropdown-item" href="nvidia.html">NVIDIA</a></li>
+                            <!-- Puedes agregar más elementos de menú desplegable aquí -->
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">AYUDA</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="./nosotros.html">Más sobre nosotros</a></li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-            
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  AYUDA
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="./contacto.html"
-                      >Contacto</a
-                    >
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Mas sobre nosotros</a>
-                  </li>
+                <!-- Icono de carrito y enlace "Ver Carrito" -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link1" href="#"><i class="fas fa-shopping-cart">
+                          <img src="./ImagenesPc/icons8-carrito-de-compras-64.png" alt="carrito de compras"></a>
+                    </li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Buscar
-              </button>
-            </form>
-          </div>
+            </div>
         </div>
-      </nav>
-    </header>
-    <!--Menu de visita para ver la variedad de los teclados gamer ofrecidos con sus precios-->
-    <h1>NVIDIA</h1>
-    <div>
-      <h5>Teclado para juegos HyperX Alloy Core RGB</h5>
-      <img
-        src="ImagenesPc/imgt1.avif"
-        alt="Teclado Mecanico Gamer"
-        width="300"
-        height="200"
-      />
-    </div>
-    <div>
-      <h5>Teclado mecánico para juegos HyperX Alloy Origins 60 (Rosa)</h5>
-      <img
-        src="ImagenesPc/imgt2.avif"
-        alt="Teclado Mecanico Gamer"
-        width="300"
-        height="200"
-      />
-    </div>
-    <div>
-      <h5>
-        Teclado Pc Steelseries Apex Pro Tkl Color Del Teclado Negro Idioma
-        Inglés Us
-      </h5>
-      <img
-        src="ImagenesPc/imgt3.webp"
-        alt="Teclado Mecanico Gamer"
-        width="300"
-        height="200"
-      />
-    </div>
+    </nav>
+</header>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous">
-    </script>
-    
-  <footer>
-    <!--Pie de pagina replicado para todos los archivos html-->
-    <p>Derechos de Autor @ 2024 Pc Power</p>
-  </footer>
-</html>
+<section id="productos">
+  <div class="container">
+      <h2 class="titleproductos">Nuestros Productos</h2>
+      <div class="row">
+          <div class="col-md-4">
+              <div class="producto">
+                  <img src="ImagenesPc/productos-amd1.webp" alt="Producto 1">
+                  <h3>Procesador AMD Ryzen 5 5600G AM4 DDR4 100-100000252BOX</h3>
+                  <span class="precio">$203.599</span>
+                  <button class="btn btn-primary">Comprar</button>
+                  <button class="btn btn-primary">Agregar</button>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="producto">
+                  <img src="ImagenesPc/productos-amd2.webp" alt="Producto 2">
+                  <h3>Placa de video AMD Sentey Radeon RX 500 Series RX 550 4GB</h3>
+                  <span class="precio">$111.273</span>
+                  <button class="btn btn-primary">Comprar</button>
+                  <button class="btn btn-primary">Agregar</button>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="producto">
+                  <img src="ImagenesPc/productos-amd3.webp" alt="Producto 3">
+                  <h3>Microprocesador Pc Amd Ryzen 5 4600g 8mb 3.7ghz Socket Am4 100-100000147box 6 Nucleos 12 Hilos</h3>
+                  <span class="precio">$153.326</span>
+                  <button class="btn btn-primary">Comprar</button>
+                  <button class="btn btn-primary">Agregar</button>
+              </div>
+          </div>
+          <div class="col-md-4">
+            <div class="producto">
+                <img src="ImagenesPc/productos-amd4.webp" alt="Producto 3">
+                <h3>Motherboard Gigabyte Amd B450m Ds3h Am4 Ryzen B450 Ddr4 Color Negro</h3>
+                <span class="precio">$128.619</span>
+                <button class="btn btn-primary">Comprar</button>
+                <button class="btn btn-primary">Agregar</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="producto">
+              <img src="ImagenesPc/productos-amd5.webp" alt="Producto 3">
+              <h3>Procesador AMD Ryzen 7 5700G 100-100000263BOX de 8 núcleos y 4.6GHz de frecuencia con gráfica integrada</h3>
+              <span class="precio">$395.999</span>
+              <button class="btn btn-primary">Comprar</button>
+              <button class="btn btn-primary">Agregar</button>
+          </div>
+      </div>
+      <div class="col-md-4">
+        <div class="producto">
+            <img src="ImagenesPc/productos-amd6.webp" alt="Producto 3">
+            <h3>Placa de video AMD ASRock Phantom Gaming Radeon RX 500 Series RX 550 PHANTOM G R RX550 2G 2GB</h3>
+            <span class="precio">$127.499</span>
+            <button class="btn btn-primary">Comprar</button>
+            <button class="btn btn-primary">Agregar</button>
+        </div>
+    </div>
+          <!-- Agrega más productos según sea necesario -->
+      </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <!-- Iconos de redes sociales -->
+ <div class="social-icons">
+   <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram">
+     <img src="../pages/ImagenesPc/icons8-instagram-48.png" alt="instagram">
+   </a>
+   <a href="https://www.twitter.com" target="_blank" class="fab fa-twitter">
+     <img src="../pages/ImagenesPc/icons8-twitter-48.png" alt="twitter">
+   </a>
+   <a href="https://www.facebook.com/?locale=es_LA" target="_blank" class="fab fa-facebook">
+     <img src="../pages/ImagenesPc/icons8-facebook-nuevo-48.png" alt="facebook">
+   </a>
+ </div>
+   <p>Derechos de Autor @ 2024 Pc Power</p>
+ </footer>
+
+ <!-- Botón de WhatsApp -->
+ <div class="whatsapp">
+   <a href="https://web.whatsapp.com" target="_blank">
+     <img src="../pages/ImagenesPc/whastaspp.svg" alt="whatsapp" />
+   </a>
+ </div>
+
+ <!-- Bootstrap Bundle JS -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>

@@ -9,8 +9,13 @@
 
 /* Color de fondo de la página */
 body {
-    background-color: rgb(187, 187, 187);
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url("../pages/ImagenesPc/fondoimgamd.png"); /* Ruta de la imagen */
+    background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
+    background-position: center; /* Centrar la imagen */
 }
+
+
 
 h2 {
     background-color: #333;
@@ -32,22 +37,22 @@ h2 {
     margin: 0;
   }
 .bg-navbar {
-    background-color: #a1a1a1; /* Cambiar el color de fondo a blanco */
+    background-color: #242222; /* Cambiar el color de fondo a blanco */
 }
 
 .navbar-brand {
     font-family: "Jaro";
     font-size: 60px;
-    margin-right: 120px;
+    margin-right: 200px;
     color: #000000;
-    -webkit-text-stroke: 2px #7A1962; /* Borde purpura de 2px alrededor del texto */
+    -webkit-text-stroke: 2px brown; /* Borde purpura de 2px alrededor del texto */
 
 }
 
 .nav-link {
     font-size: 25px;
-    margin-right: 180px;
-    color: #0c0b0a;
+    margin-right: 300px;
+    color: #ffffff;
     letter-spacing: .1em;
     font-family: "Orbitron"
 }
@@ -59,12 +64,12 @@ h2 {
 
 /* Estilo para cuando el enlace está sobre el cursor */
 .nav-link:hover {
-    color: #2e2e2e; /* Cambiar el color del texto al pasar el cursor */
+    color: #ffffff; /* Cambiar el color del texto al pasar el cursor */
 }
 
 /* Estilo para el fondo del enlace al pasar el cursor */
 .nav-link:hover {
-    background-color: #7A1962; /* Cambiar el color de fondo al pasar el cursor */
+    background-color: brown; /* Cambiar el color de fondo al pasar el cursor */
 }
 
 header {
@@ -132,10 +137,16 @@ header {
     }
 }
 
-/* Estilos para los contenedores y la cuadrícula de promociones */
+/* Estilos para los contenedores y la cuadrícula de promociones/productos */
 .container {
+    text-align: center;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.titleproductos {
+     font-size: 70px;
+     text-align: center;
 }
 
 .promo-grid {
@@ -147,7 +158,8 @@ header {
 .promo-item img {
     width: 100%;
     height: 80%;
-    border: 2px solid black;
+    border: white 10px groove;
+    border-radius: 10px;
 }
 
 .promo-grid1 {
@@ -160,11 +172,14 @@ header {
 .promo-item1 img {
     width: 100%;
     height: 110%;
-    border: 2px solid black;
+    border: white 10px groove;
+    border-radius: 10px;
 }
 
-.promo-item p {
-    font-size: 25px;
+.promo-item .pp {
+    font-size: 30px;
+    color: white;
+    margin-top: 10px;
 }
 
 .producto {
@@ -174,15 +189,21 @@ header {
 .producto img {
     width: 200px; /* Ancho fijo */
     height: 200px; /* Altura fija */
+    border: white 10px groove;
+    border-radius: 10px;
+   
 
 }
 
 .producto h3 {
     font-size: 20px;
+    color: white;
+    margin-top: 15px;
 }
 
 .producto span {
     font-size: 20px;
+    color: white;
 }
 
 /* Estilos para el botón de WhatsApp y el pie de página */
@@ -197,7 +218,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #242222;
     color: white;
     padding: 20px 0;
     margin-top: 50px;
@@ -228,8 +249,6 @@ footer p {
 
 /*Estilos para html de contacto*/
 
-@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
-
 .contact_form{  
   width: 460px; 
   height: auto;
@@ -250,7 +269,7 @@ input{
   border-radius: 5px;  
   border-style: solid; 
   border-width: 1px; 
-  border-color: #7A1962; 
+  border-color: brown; 
   margin-top: 10px;  
   padding-left: 10px;
   margin-bottom: 20px; 
@@ -264,7 +283,7 @@ input{
   border-radius: 5px;  
   border-style: solid; 
   border-width: 1px; 
-  border-color: #7A1962; 
+  border-color: brown; 
   margin-top: 10px;  
   padding-left: 10px;
   margin-bottom: 20px; 
@@ -285,8 +304,8 @@ label{
   margin-bottom: 20px; 
   margin-top: 10px;   
   text-transform: uppercase;
-  background-color: #7A1962; 
-  border-color: #7A1962; 
+  background-color: brown; 
+  border-color: brown; 
   border-style: solid; 
   border-radius: 10px;  
   width: 420px;   
@@ -300,7 +319,7 @@ label{
 
 
 .formulario span{
-  color: #7A1962; 
+  color: brown; 
 }
 
 
@@ -314,7 +333,7 @@ h1{
   font-size: 39px;  
   text-align: letf; 
   padding-bottom: 20px; 
-  color: #7A1962;
+  color: brown;
 }
 
 
@@ -323,13 +342,6 @@ h3{
   padding-bottom: 30px;
   color: #0e0e0e;   
 }
-
-
-p{
-  font-size: 14px; 
-  color: #0e0e0e; 
-}
-
 
 ::-webkit-input-placeholder {
  color: #a8a8a8;
@@ -361,8 +373,52 @@ p{
   }
 
 
+/*Estilos para seccion "Sobre Nosotros"*/
+.container {
+  max-width: 1200px;
+  margin-top: 150px;
+  padding: 0 20px;
+}
 
+.container h2 {
+  background-color: transparent;
+}
 
+.about-us, .team {
+  padding: 40px 0;
+}
+
+.about-us h2, .team h2 {
+  text-align: center;
+  color: white;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.team {
+  margin-top: 260px;
+}
+
+.member {
+  text-align: center;
+  color: white;
+  
+}
+
+.member img {
+  width: 170px; /* Definir el ancho deseado */
+  height: 170px; /* Definir la altura deseada */
+  border-radius: 50%;
+  
+}
+
+.container p {
+  font-size: 14px; 
+  color: white;
+}
 
 
 
@@ -392,3 +448,5 @@ p{
   font-weight: <weight>;
   font-style: normal;
 }
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
