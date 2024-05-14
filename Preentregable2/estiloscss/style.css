@@ -15,8 +15,6 @@ body {
     background-position: center; /* Centrar la imagen */
 }
 
-
-
 h2 {
     background-color: #333;
     color: white;
@@ -27,7 +25,7 @@ h2 {
 
 /* Estilos para la barra de navegación */
 
- .navbar { /* Posicionar la barra de navegación en la parte superior de la página */
+.navbar { /* Posicionar la barra de navegación en la parte superior de la página */
     position: fixed;
     top: 0;
     left: 0;
@@ -35,9 +33,10 @@ h2 {
     z-index: 1000; /* Asegura que la barra de navegación esté por encima de otros elementos */
     width: 100%;
     margin: 0;
-  }
+}
+
 .bg-navbar {
-    background-color: #242222; /* Cambiar el color de fondo a blanco */
+    background-color: #242222; 
 }
 
 .navbar-brand {
@@ -45,8 +44,14 @@ h2 {
     font-size: 60px;
     margin-right: 200px;
     color: #000000;
-    -webkit-text-stroke: 2px brown; /* Borde purpura de 2px alrededor del texto */
+    -webkit-text-stroke: 2px brown; /* Borde marron de 2px alrededor del texto */
+    filter: drop-shadow(5px 5px 10px rgba(136, 18, 18, 0.76));
 
+}
+
+.navbar-toggler {
+  background-color: white;
+  order: +1; /* lleve el icono del navegador de los dispositivos mas chicos que escritorio para la derecha */
 }
 
 .nav-link {
@@ -70,6 +75,10 @@ h2 {
 /* Estilo para el fondo del enlace al pasar el cursor */
 .nav-link:hover {
     background-color: brown; /* Cambiar el color de fondo al pasar el cursor */
+}
+
+.dropdown-menu {
+    color: white;
 }
 
 header {
@@ -106,36 +115,13 @@ header {
     height: 500px;
 }
 
+/* Animacion de imagenes de Inicio */
 @keyframes slide {
     0% { margin-left: 0; }
     25%, 50%, 75% { margin-left: -100%; } /* Transición suave */
     100% { margin-left: -300%; }
 }
 
-/* Estilos para tamaños de pantalla menores a 991px */
-@media (max-width: 991px) {
-    body {
-        padding: 30px;
-    }
-
-    .slider-box {
-        width: 100%;
-    }
-
-    .texto {
-        top: 50px;
-        padding: 0 25px;
-    }
-
-    .texto h2 {
-        font-size: 35px;
-        margin-bottom: 15px;
-    }
-
-    .texto p {
-        font-size: 15px;
-    }
-}
 
 /* Estilos para los contenedores y la cuadrícula de promociones/productos */
 .container {
@@ -144,9 +130,28 @@ header {
     margin: 0 auto;
 }
 
-.titleproductos {
-     font-size: 70px;
-     text-align: center;
+.titleproductos { 
+    font-size: 70px;
+    text-align: center;
+    background-color: #f8f9fa;
+    font-style: normal;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    filter: drop-shadow(5px 5px 10px rgba(136, 18, 18, 0.76));
+}
+
+.text-center {
+    display: block;
+    text-align: left; /* Ajusta según sea necesario */
+    font-size: 60px;
+    margin-top: 120px;
+}
+
+.ultimaspromociones {  /* Cambiar nombre de clases despues de la entrega */
+    text-align: center;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    margin-top: 4px;
+    font-size: 60px;
+    filter: drop-shadow(5px 5px 10px rgba(136, 18, 18, 0.76));
 }
 
 .promo-grid {
@@ -160,6 +165,7 @@ header {
     height: 80%;
     border: white 10px groove;
     border-radius: 10px;
+    filter: drop-shadow(5px 5px 10px rgba(136, 18, 18, 0.76));
 }
 
 .promo-grid1 {
@@ -174,12 +180,13 @@ header {
     height: 110%;
     border: white 10px groove;
     border-radius: 10px;
+    filter: drop-shadow(5px 5px 10px rgba(136, 18, 18, 0.76));
 }
 
 .promo-item .pp {
     font-size: 30px;
     color: white;
-    margin-top: 10px;
+    margin-top: 1px;
 }
 
 .producto {
@@ -191,8 +198,7 @@ header {
     height: 200px; /* Altura fija */
     border: white 10px groove;
     border-radius: 10px;
-   
-
+    filter: drop-shadow(5px 5px 10px rgba(136, 18, 18, 0.76));
 }
 
 .producto h3 {
@@ -206,6 +212,10 @@ header {
     color: white;
 }
 
+.btn {
+    margin-top: -50px;
+}
+
 /* Estilos para las columnas */
 .col {
     border: 2px solid black;
@@ -214,118 +224,118 @@ header {
 /*Estilos para html de contacto*/
 
 .contact_form{  
-  width: 460px; 
-  height: auto;
-  margin: 80px auto;
-  border-radius: 10px;  
-  padding-top: 30px;
-  padding-bottom: 20px;  
-  background-color: #fbfbfb; 
-  padding-left: 30px; 
-  margin-top: 0;
+    width: 460px; 
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: #fbfbfb; 
+    padding-left: 30px; 
+    margin-top: 0;
 }
 
 
 input{
-  background-color: #fbfbfb; 
-  width: 408px; 
-  height: 40px; 
-  border-radius: 5px;  
-  border-style: solid; 
-  border-width: 1px; 
-  border-color: brown; 
-  margin-top: 10px;  
-  padding-left: 10px;
-  margin-bottom: 20px; 
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: brown; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
 }
 
 
 .textarea1{
-  background-color: #fbfbfb; 
-  width: 405px; 
-  height: 150px; 
-  border-radius: 5px;  
-  border-style: solid; 
-  border-width: 1px; 
-  border-color: brown; 
-  margin-top: 10px;  
-  padding-left: 10px;
-  margin-bottom: 20px; 
-  padding-top: 15px; 
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: brown; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
 }
 
 
 label{
-  display: block; 
-  float: center;  
+    display: block; 
+    float: center;  
 }
 
 
 .button1 {
-  height: 45px; 
-  padding-left: 5px;
-  padding-right: 5px;   
-  margin-bottom: 20px; 
-  margin-top: 10px;   
-  text-transform: uppercase;
-  background-color: brown; 
-  border-color: brown; 
-  border-style: solid; 
-  border-radius: 10px;  
-  width: 420px;   
-  cursor: pointer;
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: brown; 
+    border-color: brown; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
 }
 
 
 .button1 p{
-  color: #ece4e4; 
+    color: #ece4e4; 
 }
 
 
 .formulario span{
-  color: brown; 
+    color: brown; 
 }
 
 
 .aviso{
-  font-size: 13px;  
-  color: #0e0e0e;  
+    font-size: 13px;  
+    color: #0e0e0e;  
 }
 
 
 h1{
-  font-size: 39px;  
-  text-align: letf; 
-  padding-bottom: 20px; 
-  color: brown;
+    font-size: 39px;  
+    text-align: letf; 
+    padding-bottom: 20px; 
+    color: brown;
 }
 
 
 h3{
-  font-size: 16px; 
-  padding-bottom: 30px;
-  color: #0e0e0e;   
+    font-size: 16px; 
+    padding-bottom: 30px;
+    color: #0e0e0e;   
 }
 
 ::-webkit-input-placeholder {
- color: #a8a8a8;
+    color: #a8a8a8;
 }
 
 
 ::-webkit-textarea-placeholder {
- color: #a8a8a8;
+    color: #a8a8a8;
 }
 
 
 .formulario input:focus{
-  outline:0;
-  border: 1px solid #97d848;
+    outline:0;
+    border: 1px solid #97d848;
 }
 
 
 .formulario textarea:focus{
-  outline:0;
-  border: 1px solid #97d848;
+    outline:0;
+    border: 1px solid #97d848;
 }
 
 .formulario {
@@ -334,143 +344,374 @@ h3{
 
 .contact_form { /* Agrega un poco de margen en la parte superior de la sección de contacto */
     margin-top: 150px;
+    box-shadow: 0 0 10px rgb(252, 252, 252);
+    filter: drop-shadow(5px 5px 10px rgba(136, 18, 18, 0.76));
   }
 
 
 /*Estilos para seccion "Sobre Nosotros"*/
 .container {
-  max-width: 1200px;
-  margin-top: 150px;
-  padding: 0 20px;
+    max-width: 1200px;
+    margin-top: 150px;
+    padding: 0 20px;
 }
 
 .container h2 {
-  background-color: transparent;
+    background-color: transparent;
 }
 
 .about-us, .team {
-  padding: 40px 0;
+    padding: 40px 0;
 }
 
 .about-us h2, .team h2 {
-  text-align: center;
-  color: white;
+    text-align: center;
+    color: white;
 }
 
 .team-members {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 .team {
-  margin-top: 260px;
+    margin-top: 260px;
 }
 
 .member {
-  text-align: center;
-  color: white;
+    text-align: center;
+    color: white;
   
 }
 
 .member img {
-  width: 170px; /* Definir el ancho deseado */
-  height: 170px; /* Definir la altura deseada */
-  border-radius: 50%;
+    width: 170px; 
+    height: 170px; 
+    border-radius: 50%;
   
 }
 
 .container p {
-  font-size: 14px; 
-  color: white;
+    font-size: 14px; 
+    color: white;
 }
 
+/* Estilos para seccion de preguntas frecuentes */
 .faq-section {
-  margin-top: 300px;
-  font-family: 'Poppins', sans-serif;
-  justify-content: center;
+    margin-top: 300px;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-  text-align: center;
+    text-align: center;
+}
+
+.accordion-item {
+    margin-top: 2px;
 }
 
 .faq-title {
-  font-size: 60px;
+    font-size: 60px;
+    font-style: normal;
+    box-shadow: 0 0 10px rgb(252, 252, 252);
+    filter: drop-shadow(5px 5px 10px rgba(136, 18, 18, 0.76));
 }
 
 .accordion-body {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 .accordion-button {
-  font-size: 20px;
+    font-size: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Estilos para el botón de WhatsApp y el pie de página */
 .whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
 }
 
 footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #242222;
-  color: white;
-  padding: 20px 0;
-  margin-top: 150px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background-color: #242222;
+    color: white;
+    padding: 20px 0;
+    margin-top: 150px;
+}
+
+.cbf  {
+    background-color: #242222;
+}
+
+.cbf p {
+    font-size: 25px;
 }
 
 footer p {
-  color: white;
+    color: white;
 }
 
 .pf {
-  margin-top: 300px;
+    margin-top: 300px;
 }
 
 .social-icons {
-  display: inline-block; /* Para que los iconos estén en línea */
+    display: inline-block; /* Para que los iconos estén en línea */
 }
 
 .social-icons a {
-  margin-right: 10px; /* Espacio entre los iconos */
+    margin-right: 10px; /* Espacio entre los iconos */
 }
-
-/* Ajusta según sea necesario */
-.text-center {
-  text-align: left;
-}
-
-
 
 /*Estilos de fuentes*/
 .jaro-uniquifier {
-  font-family: "Jaro", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
+
+
+
+/* estilos media query*/
+
+/*Para dispositivos mobiles*/
+@media  (max-width: 575.98px) {
+  /* Navbar ajustado */
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.9rem;
+  }
+
+
+  /* promociones ajustadas */
+  .promo-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promo-item {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .promo-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* seccion de promo ajustada */
+  .promo-grid1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promo-item1 {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .promo-item1 img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Footer ajustado */
+  .social-icons a {
+    margin: 0 5px;
+  }
+
+  .whatsapp img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Estilos para pantallas tablet */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Navbar ajustado */
+  .navbar-brand {
+    font-size: 1.4rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
+
+  /* Promocion seccion ajustada */
+  .promo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+  }
+
+  .promo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    
+  }
+
+  .promo-item img {
+    width: 100%;
+  max-width: 200px; 
+  height: 200px; 
+  object-fit: cover; /* Mantiene la proporción de la imagen y recorta lo que sobra */
+  display: block;
+  margin: auto;
+  }
+
+  /* Brand seccion ajustada */
+  .promo-grid1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .promo-item1 {
+    margin-bottom: 1rem;
+  }
+
+  .promo-item1 img {
+    width: 100%;
+  max-width: 200px; 
+  height: 200px; 
+  object-fit: cover; 
+  display: block;
+  margin: auto;
+  }
+
+  /* Footer ajustado */
+  .social-icons a {
+    margin: 0 7px;
+  }
+
+  .whatsapp img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* diseño para escritorio */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Navbar ajustado */
+  .navbar-brand {
+    font-size: 1.6rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+  }
+
+  /* Seccion de promociones ajustada */
+  .promo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .promo-item img {
+    width: 100%;
+    max-width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
+    display: block;
+    margin: auto;
+  }
+
+  .promo-item1 img {
+    width: 100%;
+    max-width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
+    display: block;
+    margin: auto;
+  }
+
+  /* Brand seccion ajustada */
+  .promo-grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+
+  /* Footer adjustments */
+  .social-icons a {
+    margin: 0 10px;
+  }
+
+  .whatsapp img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
+/* General estilos para escritorios largos*/
+@media (min-width: 992px) {
+  /* Seccion de promociones ajustadas */
+  .promo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  /* Brand seccion ajustada */
+  .promo-grid1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  
+  /* Footer ajustado */
+  .social-icons a {
+    margin: 0 10px;
+  }
+
+  .whatsapp img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .orbitron-uniquifier {
   font-family: "Orbitron", sans-serif;
