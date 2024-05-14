@@ -206,42 +206,6 @@ header {
     color: white;
 }
 
-/* Estilos para el botón de WhatsApp y el pie de página */
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999;
-}
-
-footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #242222;
-    color: white;
-    padding: 20px 0;
-    margin-top: 50px;
-}
-
-footer p {
-    color: white;
-}
-
-.social-icons {
-    display: inline-block; /* Para que los iconos estén en línea */
-  }
-  
-  .social-icons a {
-    margin-right: 10px; /* Espacio entre los iconos */
-  }
-  
-  /* Ajusta según sea necesario */
-  .text-center {
-    text-align: left;
-  }
-
-
 /* Estilos para las columnas */
 .col {
     border: 2px solid black;
@@ -420,6 +384,26 @@ h3{
   color: white;
 }
 
+.faq-section {
+  margin-top: 300px;
+  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  text-align: center;
+}
+
+.faq-title {
+  font-size: 60px;
+}
+
+.accordion-body {
+  font-size: 20px;
+}
+
+.accordion-button {
+  font-size: 20px;
+}
 
 
 
@@ -431,6 +415,52 @@ h3{
 
 
 
+
+
+
+
+
+
+
+
+/* Estilos para el botón de WhatsApp y el pie de página */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #242222;
+  color: white;
+  padding: 20px 0;
+  margin-top: 150px;
+}
+
+footer p {
+  color: white;
+}
+
+.pf {
+  margin-top: 300px;
+}
+
+.social-icons {
+  display: inline-block; /* Para que los iconos estén en línea */
+}
+
+.social-icons a {
+  margin-right: 10px; /* Espacio entre los iconos */
+}
+
+/* Ajusta según sea necesario */
+.text-center {
+  text-align: left;
+}
 
 
 
