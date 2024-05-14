@@ -504,9 +504,32 @@ footer p {
     margin-bottom: 1rem;
   }
 
+  .btn {
+    display: block;
+    padding: 5px;
+    margin: auto;
+  }
+
+  .botonc1 {
+    display: block;
+    padding: 5%;
+    margin-top: 10px;
+    
+  }
+
+  .botona2 {
+    display: block;
+    padding: 5%;
+    margin-top: 10px;
+  }
+
   .promo-item img {
     width: 100%;
-    height: auto;
+    max-width: 200px; 
+    height: 200px; 
+    object-fit: cover; /* Mantiene la proporción de la imagen y recorta lo que sobra */
+    display: block;
+    margin: auto;
   }
 
   /* seccion de promo ajustada */
@@ -522,13 +545,20 @@ footer p {
   }
 
   .promo-item1 img {
-    width: 100%;
-    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
   }
 
   /* Footer ajustado */
+
+.cbf {
+    height: auto;
+}
+
   .social-icons a {
-    margin: 0 5px;
+    margin: 5px;
   }
 
   .whatsapp img {
@@ -566,11 +596,11 @@ footer p {
 
   .promo-item img {
     width: 100%;
-  max-width: 200px; 
-  height: 200px; 
-  object-fit: cover; /* Mantiene la proporción de la imagen y recorta lo que sobra */
-  display: block;
-  margin: auto;
+    max-width: 200px; 
+    height: 200px; 
+    object-fit: cover; /* Mantiene la proporción de la imagen y recorta lo que sobra */
+    display: block;
+    margin: auto;
   }
 
   /* Brand seccion ajustada */
