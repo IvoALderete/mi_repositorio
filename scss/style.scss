@@ -1,0 +1,510 @@
+@import "pages.styles/mixin";
+@import "pages.styles/variables";
+
+// Estilos generales
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial, Helvetica, sans-serif";
+}
+
+// Color de fondo de la página
+body {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../ImagenesPc/fondoimgamd.png"); // Ruta de la imagen
+    background-size: cover; // Ajustar la imagen al tamaño del contenedor
+    background-position: center; // Centrar la imagen
+}
+
+h2 {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    font-family: "Jaro, sans-serif";
+    font-size: 35px;
+}
+
+// Estilos para la barra de navegación
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    margin: 0;
+    background-color: #242222;
+
+    .navbar-brand {
+        font-family: "Jaro, sans-serif";
+        font-size: 60px;
+        margin-right: 200px;
+        color: #000000;
+        -webkit-text-stroke: 2px brown; // Borde marrón de 2px alrededor del texto
+        filter: drop-shadow(5px 5px 10px rgba(136, 18, 18, 0.76));
+    }
+
+    .navbar-toggler {
+        background-color: white;
+        order: +1; // Llevar el icono del navegador de los dispositivos más chicos que escritorio para la derecha
+    }
+
+    .nav-link {
+        font-size: 25px;
+        margin-right: 300px;
+        color: white;
+        letter-spacing: .1em;
+        font-family: "Orbitron, sans-serif";
+
+        &:hover {
+            background-color: brown; // Cambiar el color de fondo al pasar el cursor
+        }
+    }
+
+    .dropdown-menu {
+        color: white;
+    }
+}
+
+header {
+    @include sizes (100% , auto);
+    position: fixed;
+    z-index: 999;
+}
+
+// Estilos para el carrusel de imágenes
+.slider-box {
+    @include sizes (100% , 500px);
+    margin: auto 0;
+    overflow: hidden;
+
+    ul {
+        display: flex;
+        padding: 0;
+        width: 400%;
+        animation: slide 10s infinite linear;
+        transition: margin-left 1s ease-in-out; // Agrega una transición suave
+    }
+
+    li {
+        width: 100%;
+        list-style: none;
+        position: relative;
+    }
+
+    img {
+        @include sizes (100% , 500px);
+    }
+}
+
+// Animación de imágenes de Inicio
+@keyframes slide {
+    0% { margin-left: 0; }
+    25%, 50%, 75% { margin-left: -100%; } // Transición suave
+    100% { margin-left: -300%; }
+}
+
+// Estilos para los contenedores y la cuadrícula de promociones/productos
+.container {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    h2 {
+        background-color: transparent;
+    }
+
+    &.about-us, &.team {
+        padding: 40px 0;
+    }
+
+    &.about-us h2, &.team h2 {
+        text-align: center;
+        color: white;
+    }
+
+    p {
+        font-size: 14px;
+        color: white;
+    }
+
+    .titleproductos {
+        margin-top: 200px;
+        font-size: 70px;
+        text-align: center;
+        background-color: transparent;
+        font-style: normal;
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+        filter: drop-shadow(5px 5px 10px rgba(136, 18, 18, 0.76));
+    }
+}
+
+.text-center {
+    display: block;
+    text-align: left; // Ajusta según sea necesario
+    font-size: 60px;
+    margin-top: 120px;
+}
+
+.ultimaspromociones {
+    text-align: center;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    margin-top: 4px;
+    font-size: 60px;
+    filter: drop-shadow(5px 5px 10px rgba(136, 18, 18, 0.76));
+}
+
+
+.promo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    .promo-item {
+        img {
+            @include sizes (100% , 80%);
+            border: white 10px groove;
+            border-radius: 10px;
+            filter: drop-shadow(5px 5px 10px rgba(136, 18, 18, 0.76));
+        }
+
+        .pp {
+            font-size: 30px;
+            color: white;
+            margin-top: 25px;
+        }
+
+        .btn {
+            margin-top: -85px;
+        }
+    }
+}
+
+.promo-grid1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    padding: 100px;
+
+    .promo-item1 {
+        img {
+            @include sizes (100% , 110%);
+            border: white 10px groove;
+            border-radius: 10px;
+            filter: drop-shadow(5px 5px 10px rgba(136, 18, 18, 0.76));
+        }
+    }
+}
+
+.producto {
+    margin-top: 100px;
+
+    img {
+        @include sizes (200px , 200px);
+        border: white 10px groove;
+        border-radius: 10px;
+        filter: drop-shadow(5px 5px 10px rgba(136, 18, 18, 0.76));
+    }
+
+    h3 {
+        font-size: 20px;
+        color: white;
+        margin-top: 15px;
+    }
+
+    span {
+        display: block;
+        margin-top: 20px;
+        font-weight: 300px;
+        font-size: 30px;
+        color: white;
+    }
+
+    .btn {
+        margin-top: 30px;
+    }
+
+}
+
+// Estilos para las columnas
+.col {
+    border: 2px solid black;
+}
+
+// Estilos para HTML de contacto
+.contact_form {
+    @include sizes (460px , auto);
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #fbfbfb;
+    padding-left: 30px;
+    margin-top: 0;
+    margin-top: 150px;
+    box-shadow: 0 0 10px rgb(252, 252, 252);
+    filter: drop-shadow(5px 5px 10px rgba(136, 18, 18, 0.76));
+
+    input {
+        @include sizes (408px , 40px);
+        background-color: #fbfbfb;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: brown;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .textarea1 {
+        @include sizes (405px , 150px);
+        background-color: #fbfbfb;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: brown;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        padding-top: 15px;
+    }
+
+    label {
+        display: block;
+        float: center;
+    }
+
+    .button1 {
+        @include sizes (420px , 45px);
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        text-transform: uppercase;
+        background-color: brown;
+        border-color: brown;
+        border-style: solid;
+        border-radius: 10px;
+        cursor: pointer;
+
+        p {
+            color: #ece4e4;
+        }
+    }
+
+    .formulario {
+        span {
+            color: brown;
+        }
+
+        input:focus {
+            outline: 0;
+            border: 1px solid #97d848;
+        }
+
+        textarea:focus {
+            outline: 0;
+            border: 1px solid #97d848;
+        }
+        }
+
+        .aviso {
+            font-size: 13px;
+            color: #0e0e0e;
+        }
+
+        .validacion {
+            font-size: 13px;
+            color: #f00;
+        }
+}
+
+/*Estilos para seccion "Sobre Nosotros"*/
+
+    .about-us
+        .container {
+            max-width: 1200px;
+            margin-top: 150px;
+            padding: 0 20px;
+        h2 {
+            background-color: transparent;
+            text-align: center;
+            color: white;
+        }
+}
+
+    .team {
+        padding: 40px 0;
+        margin-top: 260px;
+        .member {
+            text-align: center;
+            color: white;
+            img {
+                @include sizes (170px , 170px);
+                border-radius: 50%;
+            }
+        }
+        .team-members {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+}
+
+    .container {
+        p {
+        font-size: 14px; 
+        color: white;
+    }
+}
+
+/* Estilos para seccion de preguntas frecuentes */
+    .faq-section {
+        margin-top: 300px;
+        font-family: 'Poppins', sans-serif;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+    .accordion-item {
+        margin-top: 2px;
+            button {
+                font-size: 20px;
+            }
+    }
+
+    .faq-title {
+        font-size: 60px;
+        font-style: normal;
+        box-shadow: 0 0 10px rgb(252, 252, 252);
+        filter: drop-shadow(5px 5px 10px rgba(136, 18, 18, 0.76));
+    }
+
+    .accordion-body {
+        font-size: 20px;
+    }
+
+}
+
+/*Estilos para pie de pagina (footer)*/ 
+
+    footer {
+        @include sizes (100% , 150px);
+        left: 0;
+        bottom: 0;
+        background-color: #242222;
+        color: white;
+        padding: 20px 0;
+        margin-top: 150px;
+    p {
+        color: white;
+    }
+}
+
+    .whatsapp {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999;
+}  
+
+    .cbf  {
+        background-color: #242222;
+    p {
+        font-size: 25px;
+    }
+    
+}
+
+    .pf {
+        margin-top: 300px;
+}
+
+    .social-icons {
+        display: inline-block; /* Para que los iconos estén en línea */
+    a {
+        text-decoration: none;
+        margin-right: 10px; /* Espacio entre los iconos */
+    }
+}
+
+/*Estilos de fuentes*/
+    .jaro-uniquifier {
+        font-family: "Jaro", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+}
+
+@import "pages.styles/mediaquery";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Estilos para el HTML de servicios
+.h3tamaño {
+    color: white;
+    font-size: 30px;
+}
+
+.h4tamaño {
+    color: white;
+    font-size: 20px;
+}
+
+.listacolores {
+    color: #fbfbfb;
+}
