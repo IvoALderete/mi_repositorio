@@ -310,6 +310,7 @@ header {
   width: 170px;
   height: 170px;
   border-radius: 50%;
+  max-width: 120px;
 }
 .team .team-members {
   display: flex;
@@ -414,7 +415,6 @@ footer p {
     margin-bottom: 1rem;
   }
   .btn, .botonc1, .botona2 {
-    display: block;
     padding: 5px;
     margin: auto;
   }
@@ -434,6 +434,14 @@ footer p {
   .promo-grid1 .promo-item1 {
     width: 100%;
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+  .promo-grid1 .promo-item1 img {
+    width: 200px; /* Ancho deseado */
+    height: 200px; /* Altura deseada */
+    object-fit: cover;
   }
   .promo-item1 img {
     display: flex;

@@ -17,10 +17,10 @@
         width: 100%;
         margin-bottom: 1rem;
         }
+        
     }
 
     .btn, .botonc1, .botona2 {
-        display: block;
         padding: 5px;
         margin: auto;
     }
@@ -41,6 +41,14 @@
     .promo-item1 {
         width: 100%;
         margin-bottom: 1rem;
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        img {
+            width: 200px; /* Ancho deseado */
+            height: 200px; /* Altura deseada */
+            object-fit: cover;
+        }
         }
     }
 

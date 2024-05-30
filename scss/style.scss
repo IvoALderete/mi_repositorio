@@ -344,6 +344,7 @@ header {
             img {
                 @include sizes (170px , 170px);
                 border-radius: 50%;
+                max-width: 120px;
             }
         }
         .team-members {
