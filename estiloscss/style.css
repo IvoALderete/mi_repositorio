@@ -42,9 +42,17 @@ h2 {
   -webkit-text-stroke: 2px brown;
   filter: drop-shadow(5px 5px 10px rgba(136, 18, 18, 0.76));
 }
-.navbar .navbar-toggler {
-  background-color: white;
-  order: 1;
+.navbar .fixed-toggler {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  margin-top: 20px;
+}
+.navbar .fixed-toggler .navbar-toggler-icon {
+  position: relative;
+  font-size: 30px;
+  margin-top: -1px;
 }
 .navbar .nav-link {
   font-size: 40px;
@@ -72,7 +80,7 @@ header {
   height: 1300px;
   margin: auto;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/hero-mouse.jpg");
 }
 .slider-box ul {
   display: flex;
@@ -113,6 +121,33 @@ header {
   margin: 0;
   font-size: 50px;
   font-family: "Oswald", sans-serif;
+}
+
+.myButton {
+  margin-top: 30px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  line-height: 17px;
+  padding: 8px;
+  border-radius: 4px;
+  font-family: "Zen Dots", sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);
+  box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+  border: 2px solid rgb(28, 110, 164);
+  display: inline-block;
+}
+
+.myButton:hover {
+  background: #1C6EA4;
+}
+
+.myButton:active {
+  background: #144E75;
 }
 
 @keyframes slide {
@@ -226,11 +261,28 @@ h3 {
   margin-top: 15px;
 }
 
+.navbar-toggler {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  margin-top: 20px;
+  background-color: white;
+}
+.navbar-toggler .navbar-toggler-icon {
+  position: relative;
+  font-size: 30px;
+  margin-top: -1px;
+}
+
 span {
   display: block;
-  margin-top: 20px;
+  margin-top: -10px;
   font-weight: 300px;
-  font-size: 30px;
+  font-size: 35px;
+}
+
+.precio {
   color: white;
 }
 
@@ -490,11 +542,27 @@ footer p {
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 575.98px) {
-  .navbar-brand {
-    font-size: 1.2rem;
+  .navbar {
+    z-index: 999;
   }
-  .navbar-nav .nav-link {
+  .navbar .navbar-brand {
+    font-size: 50px;
+  }
+  .navbar .navbar-nav .nav-link {
     font-size: 0.9rem;
+  }
+  .navbar .fixed-toggler {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    margin-top: 20px;
+    background-color: white;
+  }
+  .navbar .fixed-toggler .navbar-toggler-icon {
+    position: relative;
+    font-size: 30px;
+    margin-top: -5px;
   }
   .promo-grid {
     display: flex;
@@ -551,6 +619,39 @@ footer p {
     height: 40px;
   }
 }
+.contact_form {
+  font-size: 100%;
+}
+
+/*Estilos para nosotros*/
+.about-us h2 {
+  font-size: 40px;
+  font-family: "Zen Dots", sans-serif;
+}
+.about-us p {
+  margin-top: 40px;
+  font-size: 35px;
+}
+
+.team h2 {
+  font-size: 40px;
+  font-family: "Zen Dots", sans-serif;
+}
+
+/*Estilos para formulario*/
+.formulario h1 {
+  -moz-text-align-last: auto;
+  font-size: 28px;
+  font-family: "Zen Dots", sans-serif;
+}
+.formulario h3 {
+  margin-top: 35px;
+  font-weight: 700;
+}
+.formulario label {
+  font-size: 21px;
+}
+
 /* Estilos para pantallas de tablet */
 @media (min-width: 576px) and (max-width: 767.98px) {
   .navbar-brand {

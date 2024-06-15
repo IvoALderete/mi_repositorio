@@ -50,9 +50,17 @@ h2 {
         filter: drop-shadow(5px 5px 10px rgba(136, 18, 18, 0.76));
     }
 
-    .navbar-toggler {
-        background-color: white;
-        order: +1; // Llevar el icono del navegador de los dispositivos más chicos que escritorio para la derecha
+    .fixed-toggler{
+        position: fixed;
+        top: 10px; 
+        right: 10px; 
+        z-index: 1000;
+        margin-top: 20px;
+        .navbar-toggler-icon {
+            position: relative;
+            font-size: 30px;
+            margin-top: -1px;
+        }
     }
 
     .nav-link {
@@ -83,7 +91,7 @@ header {
     @include sizes (100% , 1300px);
     margin: auto;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/hero-mouse.jpg");
 
     ul {
         display: flex;
@@ -130,7 +138,27 @@ header {
     font-family: "Oswald", sans-serif;
     }
 }
-
+.myButton {
+    margin-top: 30px;
+    color: rgb(255, 255, 255); 
+    font-size: 30px; 
+    line-height: 17px; 
+    padding: 8px; 
+    border-radius: 4px; 
+    font-family: "Zen Dots", sans-serif;
+    font-weight: normal; 
+    text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: none; 
+    background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px solid rgb(28, 110, 164); display: inline-block;
+}
+    .myButton:hover {
+    background: #1C6EA4; 
+    }
+    .myButton:active {
+    background: #144E75; 
+    }
 // Animación de imágenes de Inicio
 @keyframes slide {
     0% { margin-left: 0; }
@@ -253,11 +281,27 @@ header {
         margin-top: 15px;
     }
 
+    .navbar-toggler {
+        position: fixed;
+        top: 10px; 
+        right: 10px; 
+        z-index: 1000;
+        margin-top: 20px;
+        background-color: white;
+        .navbar-toggler-icon {
+            position: relative;
+            font-size: 30px;
+            margin-top: -1px;
+        }
+    }
     span {
         display: block;
-        margin-top: 20px;
+        margin-top: -10px;
         font-weight: 300px;
-        font-size: 30px;
+        font-size: 35px;
+    }
+    
+    .precio {
         color: white;
     }
 
