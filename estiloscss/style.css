@@ -620,6 +620,7 @@ footer p {
 @media (max-width: 575.98px) {
   .navbar {
     z-index: 999;
+    margin-top: -50px;
   }
   .navbar .navbar-brand {
     font-size: 50px;
@@ -639,6 +640,12 @@ footer p {
     position: relative;
     font-size: 30px;
     margin-top: -5px;
+  }
+  .logo {
+    margin-top: 10px;
+  }
+  .texto-encima .title_index {
+    margin-top: 200px;
   }
   .promo-grid {
     display: flex;
@@ -670,12 +677,12 @@ footer p {
     width: 100%;
     margin-bottom: 1rem;
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    justify-content: center;
+    align-items: center;
   }
   .promo-grid1 .promo-item1 img {
-    width: 200px; /* Ancho deseado */
-    height: 200px; /* Altura deseada */
+    width: 200px;
+    height: 200px;
     object-fit: cover;
   }
   .promo-item1 img {
@@ -716,7 +723,7 @@ footer p {
 
 /*Estilos para formulario*/
 .formulario h1 {
-  -moz-text-align-last: auto;
+  text-align-last: auto;
   font-size: 28px;
   font-family: "Zen Dots", sans-serif;
 }

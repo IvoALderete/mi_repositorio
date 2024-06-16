@@ -3,6 +3,7 @@
 @media (max-width: 575.98px) {
     .navbar{
         z-index: 999;
+        margin-top: -50px;
         .navbar-brand {
             font-size: 50px;
         }
@@ -23,7 +24,17 @@
                 margin-top: -5px;
             }
         }
+    }
 
+    .logo {
+        margin-top: 10px;
+
+    }
+
+    .texto-encima {
+        .title_index{
+        margin-top: 200px;
+        }
     }
 
     .promo-grid {
@@ -59,11 +70,11 @@
         width: 100%;
         margin-bottom: 1rem;
         display: flex;
-        justify-content: center; /* Centra horizontalmente */
-        align-items: center; /* Centra verticalmente */
+        justify-content: center; 
+        align-items: center; 
         img {
-            width: 200px; /* Ancho deseado */
-            height: 200px; /* Altura deseada */
+            width: 200px; 
+            height: 200px; 
             object-fit: cover;
         }
         }
@@ -115,7 +126,7 @@
 /*Estilos para formulario*/
     .formulario {
         h1 {
-            -moz-text-align-last: auto;
+            text-align-last: auto;
             font-size: 28px;
             font-family: "Zen Dots", sans-serif;
         }
